@@ -1,15 +1,7 @@
-import React from 'react'
-import Navbar from '../../components/navbar/Navbar'
-import Footer from '../../components/footer/Footer'
-
-function Home() {
-  return (
+export function Home() {
+  return(
     <div>
-        <Navbar/>
-        Home
-        <Footer/>
+      Home
     </div>
   )
 }
-
-export default Home
