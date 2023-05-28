@@ -1,5 +1,5 @@
 export function Products(){
   return (
-    <div>Products</div>
+    <div className="h-screen w-screen">Products</div>
   )
 }

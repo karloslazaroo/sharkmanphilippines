@@ -1,5 +1,7 @@
 export function Contact(){
   return (
-    <div>Contact</div>
+    <>
+    <div className="w-screen h-screen">Contact</div>
+    </>
   )
 }

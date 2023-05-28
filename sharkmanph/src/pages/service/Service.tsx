@@ -1,9 +1,5 @@
-import React from 'react'
-
-type Props = {}
-
-export  function Service({}: Props) {
+export  function Service() {
   return (
-    <div>Service</div>
+    <div className="h-screen w-screen">Service</div>
   )
 }

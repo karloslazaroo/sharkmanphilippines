@@ -1,5 +1,7 @@
 export function AboutUs(){
     return (
-      <div>About Us</div>
+        <>
+      <div className="w-screen h-screen">About Us</div>
+      </>
     )
   }

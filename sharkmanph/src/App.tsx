@@ -9,7 +9,7 @@ import Footer from './components/footer/Footer'
 
 function App() {
   return (
-    <>
+    <div className='bg-wild-sand-500'>
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>} />
@@ -19,7 +19,7 @@ function App() {
       <Route path="/about-us" element={<AboutUs/>} />
     </Routes>
     <Footer/>
-    </>
+    </div>
   )
 }
 
