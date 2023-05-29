@@ -1,7 +1,28 @@
 function Footer() {
+
+    const callback = function (entries: any) {
+        entries.forEach((entry: any) => {
+          console.log(entry);
+      
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fadeIn");
+          } else {
+            entry.target.classList.remove("animate-fadeIn");
+          }
+        });
+      };
+      
+      const observer = new IntersectionObserver(callback);
+      
+      const targets = document.querySelectorAll(".js-show-on-scroll");
+      targets.forEach(function (target) {
+        target.classList.add("opacity-0");
+        observer.observe(target);
+      });
+      
   return (
     
-<footer className=" border-gray-200 bg-wild-sand-400">
+<footer className=" border-gray-200 bg-wild-sand-400 js-show-on-scroll repeat-infinite">
     <div className="mx-auto w-full max-w-screen-xl">
       <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
         <div>
