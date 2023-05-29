@@ -7,8 +7,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'Anton': ['Anton', 'sans-serif']
+      },
       animation: {
-        fadeIn: "fadeIn 2s ease-in forwards"
+        fadeIn: "fadeIn 1s ease-in forwards"
       },
       keyframes: {
         fadeIn: {
